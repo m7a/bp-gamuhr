@@ -1,0 +1,11 @@
+test: compile
+	java ma.gamuhr.Main
+
+compile:
+	javac ma/gamuhr/*.java
+
+jar: compile
+	jar cfve gamuhr.jar ma.gamuhr.Main ma
+
+clean:
+	rm ma/gamuhr/*.class
