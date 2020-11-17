@@ -26,6 +26,11 @@ gamuhr /usr/bin
 gamuhr.jar /usr/share/java
 </property>
 
+<!-- CI INTEGRATION -->
+<target name="package_triggered" depends="package">
+	<property name="masysma.ci.trigger" value="newver"/>
+</target>
+
 <!-- CONSTANT TPL IMPORT -->
 <property environment="env"/>
 <condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
