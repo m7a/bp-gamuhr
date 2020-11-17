@@ -1,0 +1,2 @@
+#!/bin/sh -eu
+exec java -cp /usr/share/java/gamuhr.jar ma.gamuhr.Main "$@"

@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="build">
+<project default="jar">
 
 <!-- APPLICATION METADATA -->
-<property name="masysma.target" value="gamuhr"/> 
-<property name="masysma.main"   value="ma.gamuhr.Main"/>
+<property name="masysma.target"  value="gamuhr"/> 
+<property name="masysma.main"    value="ma.gamuhr.Main"/>
+<property name="mdpc.name"       value="mdvl-gamuhr"/>
+<property name="mdpc.section"    value="java"/>
+<property name="mdpc.arch"       value="all"/>
+<property name="mdpc.descrs"     value="Display 7-segment timer"/>
+<property name="mdpc.depends"    value="default-jre"/>
+<property name="mdpc.descrl">
+ The GAM UHR provides a simple on-going time counter in the style of a
+ 7-segment clock. It is intended to be visible upon a quick glance and hence
+ shows large segments.
+ .
+ One possible use is keeping track of ongoing game times, hence the prefix GAM.
+ The only interface element provided is a pause button to temporarily halt the
+ ongoing time counter.
+</property>
+<property name="ant.build.javac.source" value="1.6"/>
+<property name="ant.build.javac.target" value="1.6"/>
+
+<property name="mdpc.file.install">
+gamuhr /usr/bin
+gamuhr.jar /usr/share/java
+</property>
 
 <!-- CONSTANT TPL IMPORT -->
 <property environment="env"/>
