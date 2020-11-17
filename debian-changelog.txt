@@ -1,3 +1,9 @@
+mdvl-gamuhr (1.0.1) stable; urgency=medium
+
+  * Attempt to trigger build by increasing version.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Tue, 17 Nov 2020 11:30:40 +0100
+
 mdvl-gamuhr (1.0.0) stable; urgency=medium
 
   * Package created with MDPC 2
